@@ -47,7 +47,7 @@ const IndexPage = () => {
                 title={edge.node.frontmatter.title}
                 date={edge.node.frontmatter.date}
                 src={edge.node.frontmatter.thumbnail.childImageSharp.fluid.src}
-                link={edge.node.fields.slug}
+                link={`blog/${edge.node.fields.slug}`}
               />
             </Col>
           ))}
